@@ -10,7 +10,7 @@ namespace Köksmått
     class Startmenu
     {
 
-
+        
         public static void StartProgram()
         {
 
@@ -20,6 +20,8 @@ namespace Köksmått
 
             do
             {
+                header();
+                
                 Console.WriteLine("Hej och välkommen till denna konverterare för köksmått!");
                 Console.WriteLine("Tryck 1 för att konvertera svenska mått.");
                 Console.WriteLine("Tryck 2 för att konvertera brittiska mått");
@@ -59,7 +61,15 @@ namespace Köksmått
             }
         }
 
+        static string titel = "Kökskonverteraren";
+        static string line = "--------------------------\n";
+        static void header()
+        {
+            Console.Clear();
+            Console.WriteLine(titel);
+            Console.WriteLine(line);
 
+        }
     }
 
 }
