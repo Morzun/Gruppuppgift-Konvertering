@@ -47,7 +47,7 @@ namespace Köksmått
                     break;
 
                 case 3:
-                    //AmericanMeasurments();
+                    American.AmericanMeasurments();
                     break;
                 case 4:
                     break;

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Köksmått
 {
-    class Amerikan
+    class American
     {
 
-        public static void SwedishMeasurments()
+        public static void AmericanMeasurments()
         {
 
             int menu = 0;
@@ -21,13 +21,12 @@ namespace Köksmått
             do
             {
                 Console.WriteLine("Var vänlig och välj vilket mått det är du vill konvertera!");
-                Console.WriteLine("Tryck 1 för att konvertera liter.");
-                Console.WriteLine("Tryck 2 för att konvertera deciliter.");
-                Console.WriteLine("Tryck 3 för att konvertera centiliter.");
-                Console.WriteLine("Tryck 4 för att konvertera en matsked.");
-                Console.WriteLine("Tryck 5 för att konvertera en tesked.");
-                Console.WriteLine("Tryck 6 för att konvertera ett kryddmått.");
-                Console.WriteLine("Tryck 7 för att återgå till startmenyn..");
+                Console.WriteLine("Tryck 1 för att konvertera US-gallon.");
+                Console.WriteLine("Tryck 2 för att konvertera US-quart.");
+                Console.WriteLine("Tryck 3 för att konvertera US-pint.");
+                Console.WriteLine("Tryck 4 för att konvertera US-cup.");
+                Console.WriteLine("Tryck 5 för att konvertera US-fluidounce.");                
+                Console.WriteLine("Tryck 6 för att återgå till startmenyn..");
 
 
 
@@ -49,26 +48,23 @@ namespace Köksmått
             switch (menu)
             {
                 case 1:
-                    choice = "liter";
+                    choice = "us-gallon";
                     break;
 
                 case 2:
-                    choice = "deciliter";
+                    choice = "us-quart";
                     break;
 
                 case 3:
-                    choice = "centiliter";
+                    choice = "us-pint";
                     break;
                 case 4:
-                    choice = "matsked";
+                    choice = "us-cup";
                     break;
                 case 5:
-                    choice = "tesked";
+                    choice = "us-fluidounce";
                     break;
                 case 6:
-                    choice = "kryddmått";
-                    break;
-                case 7:
                     Startmenu.StartProgram();
                     break;
 
@@ -91,14 +87,14 @@ namespace Köksmått
                 Console.WriteLine("Tryck 7 för att konvertera till UK-gallon.");
                 Console.WriteLine("Tryck 8 för att konvertera till UK-pint");
                 Console.WriteLine("Tryck 9 för att konvertera till UK-cup.");
-                Console.WriteLine("Tryck 10 för att konvertera till UK-fluid ounce.");
+                Console.WriteLine("Tryck 10 för att konvertera till UK-fluidounce.");
                 Console.WriteLine("Tryck 11 för att konvertera till UK-tablespoon");
                 Console.WriteLine("Tryck 12 för att konvertera till UK-teaspoon.");
                 Console.WriteLine("Tryck 13 för att konvertera till US-gallon.");
                 Console.WriteLine("Tryck 14 för att konvertera till US-quart");
                 Console.WriteLine("Tryck 15 för att konvertera till US-pint.");
                 Console.WriteLine("Tryck 16 för att konvertera till US-cup.");
-                Console.WriteLine("Tryck 17 för att konvertera till US-fluid ounce.");
+                Console.WriteLine("Tryck 17 för att konvertera till US-fluidounce.");
 
                 try
                 {
@@ -195,5 +191,5 @@ namespace Köksmått
     }
 }
 
-    }
-}
+    
+
