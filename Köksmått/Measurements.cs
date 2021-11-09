@@ -19,17 +19,17 @@ namespace Köksmått
             measureList.Add("matsked", 15);
             measureList.Add("tesked", 5);
             measureList.Add("kryddmått", 1);
-            measureList.Add("uk-gallon", 4500);
-            measureList.Add("uk-pint", 570);
-            measureList.Add("uk-cup", 280);
-            measureList.Add("uk-fluid ounce", 28);
-            measureList.Add("uk-tablespoon", 15);
-            measureList.Add("uk-teaspoon", 5);
-            measureList.Add("us-gallon", 3800);
-            measureList.Add("us-quart", 950);
-            measureList.Add("us-pint", 470);
-            measureList.Add("us-cup", 240);
-            measureList.Add("us-fluidounce", 30);
+            measureList.Add("ukgallon", 4500);
+            measureList.Add("ukpint", 570);
+            measureList.Add("ukcup", 280);
+            measureList.Add("ukfluid ounce", 28);
+            measureList.Add("uktablespoon", 15);
+            measureList.Add("ukteaspoon", 5);
+            measureList.Add("usgallon", 3800);
+            measureList.Add("usquart", 950);
+            measureList.Add("uspint", 470);
+            measureList.Add("uscup", 240);
+            measureList.Add("usfluid ounce", 30);
         }
 
 
