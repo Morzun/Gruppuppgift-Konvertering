@@ -30,7 +30,7 @@ namespace Köksmått
             measureList.Add("usquart", 950);
             measureList.Add("uspint", 470);
             measureList.Add("uscup", 240);
-            measureList.Add("usfluidounce", 30);
+            measureList.Add("usfluid ounce", 30);
         }
 
 
