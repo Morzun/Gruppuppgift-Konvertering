@@ -20,6 +20,8 @@ namespace Köksmått
 
             do
             {
+                Measurements.header();
+
                 Console.WriteLine("Var vänlig och välj vilket mått det är du vill konvertera!");
                 Console.WriteLine("Tryck 1 för att konvertera usgallon.");
                 Console.WriteLine("Tryck 2 för att konvertera usquart.");
