@@ -79,6 +79,7 @@ namespace Köksmått
 
             do
             {
+                Measurements.header();
                 Console.WriteLine("Du valde {0}, välj nu vad du vill konvertera till", choice);
                 Console.WriteLine("Tryck 1 för att konvertera till liter.");
                 Console.WriteLine("Tryck 2 för att konvertera till deciliter");
