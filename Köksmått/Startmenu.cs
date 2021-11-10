@@ -57,6 +57,7 @@ namespace Köksmått
                     American.AmericanMeasurments();
                     break;
                 case 4:
+                    Environment.Exit(0);
                     break;
             }
             

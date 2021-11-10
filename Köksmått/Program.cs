@@ -10,7 +10,7 @@ namespace Köksmått
 
             Measurements.InitializeMeasurements();
             Startmenu.StartProgram();
-            Measurements.header();
+            
         }
     }
 }

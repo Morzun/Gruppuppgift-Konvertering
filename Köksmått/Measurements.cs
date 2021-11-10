@@ -38,10 +38,14 @@ namespace Köksmått
         {
             double sum = measureList[i] * amount / measureList[j];
             //Console.WriteLine("Att konvertera {0} st {1} till {2} resulterar i {3} st {4}", amount, i, j, amount);
-            Console.Clear();
+            
             Console.WriteLine(sum + " " + j);
+
+            RunAgain();
+            
           
         }
+
         public static void header() //metoden för headline
         {
             Console.Clear();
@@ -50,6 +54,24 @@ namespace Köksmått
 
         }
 
+        public static void RunAgain()
+        {
+            int menu = 0;
+            Console.WriteLine("Tryck 1 för att göra en till konvertering.. OBS, raderar all text.");
+            Console.WriteLine("Tryck 2 för att avsluta programmet..");
+
+            menu = int.Parse(Console.ReadLine());
+            switch (menu)
+            {
+                case 1:
+                    Startmenu.StartProgram();
+                    break;
+                case 2:
+                    Environment.Exit(0);
+                    break;
+                  
+            }
+        }
 
     }
 }
