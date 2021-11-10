@@ -23,6 +23,7 @@ namespace Köksmått
             do
             {
                 Measurements.header();
+
                 Console.WriteLine("Var vänlig och välj vilket mått det är du vill konvertera!");
                 Console.WriteLine("Tryck 1 för att konvertera liter.");
                 Console.WriteLine("Tryck 2 för att konvertera deciliter.");
@@ -43,7 +44,6 @@ namespace Köksmått
 
                 catch
                 {
-                    Measurements.header();
                     Console.WriteLine("Det var inte en korrekt input, försök igen..");
                     isInvalidInput = true;
                 }
@@ -78,6 +78,7 @@ namespace Köksmått
 
             }
             Measurements.header();
+
             Console.WriteLine("Hur många {0} vill du konvertera?", choice);
             quantity = double.Parse(Console.ReadLine());
 

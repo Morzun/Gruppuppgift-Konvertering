@@ -77,6 +77,7 @@ namespace Köksmått
             }
 
             Measurements.header();
+
             Console.WriteLine("Hur många {0} vill du konvertera?", choice);
             quantity = double.Parse(Console.ReadLine());
 
