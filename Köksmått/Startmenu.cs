@@ -6,15 +6,22 @@ using System.Threading.Tasks;
 
 namespace Köksmått
 {
+    
     class Startmenu
     {
+
+        
         public static void StartProgram()
         {
+
+
             int menu = 0;
             bool isInvalidInput = false;
 
             do
             {
+                header();
+                
                 Console.WriteLine("Hej och välkommen till denna konverterare för köksmått!");
                 Console.WriteLine("Tryck 1 för att konvertera svenska mått.");
                 Console.WriteLine("Tryck 2 för att konvertera brittiska mått");
@@ -43,7 +50,7 @@ namespace Köksmått
                     break;
 
                 case 2:
-                    //BrittishMeasurments();
+                    Brittish.BrittishMeasurements();
                     break;
 
                 case 3:
@@ -54,8 +61,16 @@ namespace Köksmått
             }
         }
 
+        static string titel = "Kökskonverteraren";
+        static string line = "--------------------------\n";
+        static void header()
+        {
+            Console.Clear();
+            Console.WriteLine(titel);
+            Console.WriteLine(line);
 
+        }
     }
 
-    }
+}
 

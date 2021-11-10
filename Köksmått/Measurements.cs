@@ -9,6 +9,7 @@ namespace Köksmått
     class Measurements
 
     {
+
         public static Dictionary<string, double> measureList = new Dictionary<string, double>();
 
         public static void InitializeMeasurements()
@@ -37,7 +38,8 @@ namespace Köksmått
         {
             double sum = measureList[i] * amount / measureList[j];
             //Console.WriteLine("Att konvertera {0} st {1} till {2} resulterar i {3} st {4}", amount, i, j, amount);
-            Console.WriteLine(sum);
+            Console.Clear();
+            Console.WriteLine(sum + " " + j);
           
         }
 
