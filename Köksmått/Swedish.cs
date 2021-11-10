@@ -12,6 +12,7 @@ namespace Köksmått
 
         public static void SwedishMeasurments()
         {
+            Measurements.header();
 
             int menu = 0;
             bool isInvalidInput = false;
@@ -21,7 +22,7 @@ namespace Köksmått
 
             do
             {
-                header();
+                Measurements.header();
                 Console.WriteLine("Var vänlig och välj vilket mått det är du vill konvertera!");
                 Console.WriteLine("Tryck 1 för att konvertera liter.");
                 Console.WriteLine("Tryck 2 för att konvertera deciliter.");
@@ -42,7 +43,7 @@ namespace Köksmått
 
                 catch
                 {
-                    header();
+                    Measurements.header();
                     Console.WriteLine("Det var inte en korrekt input, försök igen..");
                     isInvalidInput = true;
                 }
@@ -76,7 +77,7 @@ namespace Köksmått
                     break;
 
             }
-            header();
+            Measurements.header();
             Console.WriteLine("Hur många {0} vill du konvertera?", choice);
             quantity = double.Parse(Console.ReadLine());
 
@@ -85,9 +86,8 @@ namespace Köksmått
 
             do
             {
-                header();
+                Measurements.header();
                 Console.WriteLine("Du valde {0}, välj nu vad du vill konvertera till", choice);
-                Console.WriteLine(line);
                 Console.WriteLine("Tryck 1 för att konvertera till liter.");
                 Console.WriteLine("Tryck 2 för att konvertera till deciliter");
                 Console.WriteLine("Tryck 3 för att konvertera till centiliter.");
@@ -198,15 +198,7 @@ namespace Köksmått
 
 
         }
-        static string titel = "Kökskonverteraren";
-        static string line = "--------------------------\n";
-        static void header()
-        {
-            Console.Clear();
-            Console.WriteLine(titel);
-            Console.WriteLine(line);
-
-        }
+        
 
     }
 }

@@ -8,9 +8,6 @@ namespace Köksmått
 {
     class Brittish
     {
-            
-        static string titel = "Kökskonverteraren";
-        static string line = "--------------------------\n";
        
         public static void BrittishMeasurements()
         {
@@ -23,7 +20,8 @@ namespace Köksmått
 
             do
             {
-                header();
+                Measurements.header();
+
                 Console.WriteLine("Var vänlig och välj vilket mått det är du vill konvertera!");
                 Console.WriteLine("Tryck 1 för att konvertera ukgallon.");
                 Console.WriteLine("Tryck 2 för att konvertera ukpint.");
@@ -77,8 +75,8 @@ namespace Köksmått
                     break;
 
             }
-            
-            header();
+
+            Measurements.header();
             Console.WriteLine("Hur många {0} vill du konvertera?", choice);
             quantity = double.Parse(Console.ReadLine());
 
@@ -196,17 +194,9 @@ namespace Köksmått
 
             }
 
+           
 
-        
-        
-        }
-       
-        static void header() 
-        {
-            Console.Clear();
-            Console.WriteLine(titel);
-            Console.WriteLine(line);
-            
+
         }
     
     }

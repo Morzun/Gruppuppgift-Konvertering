@@ -42,7 +42,13 @@ namespace Köksmått
             Console.WriteLine(sum + " " + j);
           
         }
+        public static void header() //metoden för headline
+        {
+            Console.Clear();
+            Console.WriteLine("Kökskonverteraren");
+            Console.WriteLine("--------------------------\n");
 
+        }
 
 
     }

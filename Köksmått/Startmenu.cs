@@ -20,8 +20,8 @@ namespace Köksmått
 
             do
             {
-                header();
-                
+                Measurements.header();
+
                 Console.WriteLine("Hej och välkommen till denna konverterare för köksmått!");
                 Console.WriteLine("Tryck 1 för att konvertera svenska mått.");
                 Console.WriteLine("Tryck 2 för att konvertera brittiska mått");
@@ -59,17 +59,10 @@ namespace Köksmått
                 case 4:
                     break;
             }
+            
         }
 
-        static string titel = "Kökskonverteraren";
-        static string line = "--------------------------\n";
-        static void header()
-        {
-            Console.Clear();
-            Console.WriteLine(titel);
-            Console.WriteLine(line);
-
-        }
+       
     }
 
 }
